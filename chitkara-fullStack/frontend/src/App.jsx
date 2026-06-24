@@ -38,11 +38,11 @@ setLoading(true);
     .filter(Boolean);
 
   const res = await axios.post(
-    "http://localhost:3000/bfhl",
-    {
-      data: dataArray,
-    }
-  );
+  "https://bfhl-hierarchy-analyzer-1.onrender.com/bfhl",
+  {
+    data: dataArray,
+  }
+);
 
   setResponse(res.data);
 } catch (err) {

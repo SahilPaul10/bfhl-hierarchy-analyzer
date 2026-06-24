@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+background: linear-gradient(
+135deg,
+#0f172a,
+#020617
+);
+color: white;
+font-family: Inter, Arial, sans-serif;
+}
+
+.container {
+max-width: 1300px;
+margin: auto;
+padding: 30px;
+}
+
+.hero {
+text-align: center;
+margin-bottom: 30px;
+}
+
+.hero-icon {
+font-size: 60px;
+color: #60a5fa;
+}
+
+.hero h1 {
+font-size: 3.5rem;
+margin-top: 10px;
+}
+
+.hero p {
+color: #94a3b8;
+margin-top: 10px;
+}
+
+.glass {
+background: rgba(30,41,59,0.7);
+backdrop-filter: blur(12px);
+border-radius: 20px;
+border: 1px solid rgba(255,255,255,0.08);
+}
+
+.input-section {
+padding: 25px;
+}
+
+.input-section h2 {
+margin-bottom: 15px;
+}
+
+textarea {
+width: 100%;
+padding: 15px;
+border-radius: 12px;
+background: #0f172a;
+color: white;
+border: 1px solid #334155;
+}
+
+.btn-group {
+display: flex;
+gap: 10px;
+margin-top: 15px;
+}
+
+button {
+padding: 12px 18px;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+background: #3b82f6;
+color: white;
+font-weight: bold;
+}
+
+.stats {
+margin-top: 25px;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 20px;
+}
+
+.card {
+background: #1e293b;
+padding: 20px;
+border-radius: 16px;
+text-align: center;
+}
+
+.card p {
+font-size: 2rem;
+margin-top: 10px;
+}
+
+.results {
+margin-top: 25px;
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+gap: 20px;
+}
+
+.hierarchy-card {
+padding: 20px;
+}
+
+.tree-badge {
+display: inline-block;
+background: #22c55e;
+padding: 6px 12px;
+border-radius: 8px;
+margin-top: 10px;
+}
+
+.cycle-badge {
+display: inline-block;
+background: #ef4444;
+padding: 6px 12px;
+border-radius: 8px;
+margin-top: 10px;
+}
+
+.bottom-grid {
+margin-top: 25px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+}
+
+.bottom-grid div {
+padding: 20px;
+}
+
+ul {
+margin-top: 10px;
+padding-left: 20px;
+}
+
+.raw-json {
+margin-top: 25px;
+padding: 20px;
+}
+
+pre {
+margin-top: 15px;
+overflow-x: auto;
+}
+
+@media(max-width:768px){
+.stats,
+.bottom-grid{
+grid-template-columns:1fr;
+}
+}
